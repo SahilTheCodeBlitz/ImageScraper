@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Parser</title>
+    <style>
+        * {
+            margin: 5px;
+           
+        }
+
+        .header {
+            display: flex;
+            height: 7vh;
+            background-color: rgb(220, 200, 240);
+            border: 2px solid burlywood;
+            font-size: larger;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: bold;
+        }
+
+        .heading {
+            align-self: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        .menu {
+            margin-left: auto;
+            /* This will push the menu items to the end */
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .about,
+        .help {
+
+            margin-left: 10px;
+            /* Add some space between menu items */
+        }
+
+        .intro{
+            margin-top: 10px;
+            width: 50vw;
+            height: 20vh; 
+            border: 2px solid burlywood;
+            text-align: justify;
+            padding: 2px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="heading">
+            Image Scraper
+        </div>
+        <div class="menu">
+            <div class="about">
+                About
+            </div>
+            <div class="help">
+                Help
+            </div>
+        </div>
+
+
+    </div>
+    <center>
+        <div class="intro">
+
+       
+            An image scraper is a powerful tool designed to extract and gather images from various online sources, such as
+            websites or image galleries. Using automated processes, image scrapers navigate through web pages, locate image
+            URLs, and download the images for further analysis or utilization. This technology is commonly employed in
+            applications related to data collection, content aggregation, or data mining, enabling users to efficiently
+            retrieve a large volume of images based on specific criteria. Image scrapers play a crucial role in streamlining
+            the process of acquiring visual data, offering convenience and efficiency in tasks that involve extensive image
+            retrieval from the vast expanse of the internet.
+        </div>
+    </center>
+
+    <center>
+        <form action="/submitdata" method="post" class="forms">
+            <label for="query" > Enter name of image you want to search : </label> 
+            <input type="text" name="query" id="query" placeholder="Eg . Cat , Dog , Table">
+            <button type="submit" value="search">Search</button>
+        </form>
+    </center>
+ 
+
+</body>
+
+</html>
