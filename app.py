@@ -44,7 +44,7 @@ def imageSave():
 
          
 
-    return f'query ={queryi} '     
+    return f'Check folder on your local file system you will see 20 images of {queryi} '     
       
 
 if __name__ == "__main__":
